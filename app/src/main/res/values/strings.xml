@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">PoiCountries</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="btn_country_search">Country Search</string>
+    <string name="btn_error_confirm">Okay</string>
+    <string name="label_error_title">An Error Occurred</string>
+    <string name="lbl_brows_countries">Browse the\nCountries</string>
+    <string name="label_sells_at">Sells at</string>
+    <string name="lbl_country_details_title">Country details</string>
+    <string name="snackbar_click_for_details">Click the card for details</string>
+    <string name="btn_show_details">Show details</string>
+    <string name="dialog_title_country_search">Country Search</string>
+    <string name="btn_search">Search</string>
+    <string name="hint_country_search">Country name</string>
+    <string name="lbl_search_country">Or search for a country</string>
+    <string name="lbl_country_list">Country List</string>
+    <string name="lbl_sort_by">Sorty by</string>
+    <string name="btn_population">Population</string>
+    <string name="btn_name">Name</string>
+    <string name="btn_ascending">Ascending</string>
+    <string name="btn_descending">Descending</string>
+    <string name="btn_subregion">Subregion</string>
+    <string name="btn_language">Language</string>
+    <string name="lbl_filter_by">Filter by</string>
+    <string name="btn_clear_filter">Clear filter</string>
+    <string name="lbl_languages_title">Languages</string>
+    <string name="lbl_borders_title">Bordering countries</string>
+    <string name="btn_hide_details">Hide Details</string>
+</resources>

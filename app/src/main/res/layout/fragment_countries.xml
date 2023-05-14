@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradiant_primary_vertical"
+    tools:context=".ui.countries.CountriesFragment">
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="12dp"
+        android:layout_marginTop="14dp"
+        android:fontFamily="@font/poi_bold"
+        android:shadowColor="#662D2D2D"
+        android:shadowRadius="15"
+        android:text="@string/lbl_country_list"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="40sp"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/edit_search"
+        style="@style/EditTextStyle"
+        android:layout_width="0dp"
+        android:paddingStart="10dp"
+        android:drawablePadding="6dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="6dp"
+        android:backgroundTint="@color/white"
+        android:hint="@string/hint_country_search"
+        android:importantForAutofill="no"
+        android:drawableStart="@drawable/ic_search"
+        android:drawableTint="@color/primary"
+        android:inputType="text"
+        android:lineSpacingExtra="4sp"
+        android:textColor="@color/primary"
+        android:textColorHint="@color/light_blue"
+        app:layout_constraintEnd_toStartOf="@id/btn_sort"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_title"
+        tools:ignore="LabelFor" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/btn_sort"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="6dp"
+        android:backgroundTint="@color/white"
+        android:src="@drawable/ic_sort"
+        app:borderWidth="0dp"
+        app:layout_constraintBottom_toBottomOf="@id/edit_search"
+        app:layout_constraintEnd_toStartOf="@id/btn_filter"
+        app:layout_constraintTop_toTopOf="@id/edit_search"
+        app:tint="@color/primary"
+        tools:ignore="ContentDescription" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/btn_filter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="14dp"
+        android:backgroundTint="@color/white"
+        android:src="@drawable/ic_filter"
+        app:borderWidth="0dp"
+        app:layout_constraintBottom_toBottomOf="@id/edit_search"
+        app:layout_constraintDimensionRatio="1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/edit_search"
+        app:tint="@color/primary"
+        tools:ignore="ContentDescription" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_countries"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginHorizontal="12dp"
+        android:layout_marginTop="16dp"
+        android:background="@color/transparent"
+        android:fadingEdgeLength="10dp"
+        android:requiresFadingEdge="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/edit_search"
+        tools:itemCount="10"
+        tools:listitem="@layout/layout_country_cell" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="20dp"
+    android:background="@drawable/bg_round_corner_dialog"
+    android:backgroundTint="@color/white"
+    android:orientation="vertical"
+    android:paddingHorizontal="24dp"
+    android:paddingVertical="40dp">
+
+    <ImageView
+        android:id="@+id/img_icon"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="30dp"
+        android:contentDescription="@null"
+        android:src="@drawable/ic_filter"
+        app:tint="@color/primary" />
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:fontFamily="@font/poi_bold"
+        android:gravity="center"
+        android:lineSpacingExtra="4sp"
+        android:text="@string/lbl_filter_by"
+        android:textColor="@color/primary"
+        android:textSize="24sp" />
+
+    <com.google.android.material.button.MaterialButtonToggleGroup
+        android:id="@+id/toggle_feature"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:gravity="center"
+        app:checkedButton="@id/btn_language"
+        app:selectionRequired="true"
+        app:singleSelection="true">
+
+        <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+            android:id="@+id/btn_language"
+            style="@style/ToggleButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="7"
+            android:text="@string/btn_language" />
+
+        <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+            android:id="@+id/btn_subregion"
+            style="@style/ToggleButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="7"
+            android:text="@string/btn_subregion" />
+    </com.google.android.material.button.MaterialButtonToggleGroup>
+
+    <androidx.appcompat.widget.AppCompatSpinner
+        android:id="@+id/spinner_filter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="12dp"
+        android:layout_marginTop="16dp"
+        android:paddingVertical="6dp"
+        android:background="@drawable/shape_curved_bg"
+        android:backgroundTint="@color/light_gray"
+        android:popupBackground="@drawable/shape_curved_bg_gray"
+
+        />
+
+    <Button
+        android:id="@+id/btn_okay"
+        style="@style/RegularButtonStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:text="@string/btn_error_confirm" />
+
+    <Button
+        android:id="@+id/btn_clear"
+        style="@style/AccentButtonStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/btn_clear_filter" />
+
+</LinearLayout>
+

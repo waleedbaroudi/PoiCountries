@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="20dp"
+    android:background="@drawable/bg_round_corner_dialog"
+    android:backgroundTint="@color/white"
+    android:orientation="vertical"
+    android:paddingHorizontal="24dp"
+    android:paddingVertical="40dp">
+
+    <ImageView
+        android:id="@+id/img_icon"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="30dp"
+        android:contentDescription="@null"
+        app:tint="@color/primary" />
+
+    <!--        style="@style/DarkTextStyle_24sp"-->
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:fontFamily="@font/poi_bold"
+        android:gravity="center"
+        android:lineSpacingExtra="4sp"
+        android:textColor="@color/primary"
+        android:textSize="24sp"
+        tools:text="input title" />
+
+    <!--        style="@style/LightTextStyle_16"-->
+    <EditText
+        android:id="@+id/edit_input"
+        style="@style/EditTextStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:importantForAutofill="no"
+        android:inputType="text"
+        android:lineSpacingExtra="4sp"
+        tools:hint="input"
+        tools:ignore="LabelFor" />
+
+    <!--        <Button-->
+    <!--            android:id="@+id/btn_okay"-->
+    <!--            style="@style/RegularButtonStyle"-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:text="@string/msg_btn_continue"-->
+    <!--            android:layout_gravity="center"-->
+    <!--            android:layout_marginTop="@dimen/margin_30"/>-->
+
+    <Button
+        android:id="@+id/btn_okay"
+        style="@style/RegularButtonStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:text="@string/btn_error_confirm" />
+
+</LinearLayout>
+

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_marginHorizontal="20dp"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_round_corner_dialog"
+    android:backgroundTint="@color/white"
+    android:orientation="vertical"
+    android:paddingHorizontal="24dp"
+    android:paddingVertical="40dp">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:contentDescription="@null"
+        android:src="@drawable/ic_error"
+        app:tint="@color/accent"/>
+
+    <!--        style="@style/DarkTextStyle_24sp"-->
+    <TextView
+        android:id="@+id/lbl_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:lineSpacingExtra="4sp"
+        android:fontFamily="@font/poi_bold"
+        android:textSize="20sp"
+        android:text="@string/label_error_title"
+        android:textColor="@color/accent" />
+
+    <!--        style="@style/LightTextStyle_16"-->
+    <TextView
+        android:id="@+id/lbl_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:lineSpacingExtra="4sp"
+        android:fontFamily="@font/poi_regular"
+        android:textColor="@color/dark_gray"
+        tools:text="unknown" />
+
+    <Button
+        android:id="@+id/btn_okay"
+        style="@style/AccentButtonStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:backgroundTint="#E28F00"
+        android:text="@string/btn_error_confirm" />
+
+</LinearLayout>
+
